@@ -48,7 +48,7 @@ h1 {
     font-size: 2.5rem;
     font-family: 'Bangers', sans-serif;
     color: #b82626;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-shadow: 
         2px 2px 0 white, 
         -2px -2px 0 white, 
@@ -119,7 +119,7 @@ footer p {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .social-media {
@@ -133,7 +133,7 @@ footer p {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -143,7 +143,7 @@ footer p {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .social-media img {
@@ -151,6 +151,6 @@ footer p {
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
