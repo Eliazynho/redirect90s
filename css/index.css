@@ -113,7 +113,7 @@ h1 {
 }
 
 .button:hover {
-  background-color: #ff7e5f;
+  background-color: #b82626;
   color: white;
 }
 
@@ -123,8 +123,34 @@ h1 {
   font-size: 1rem;
   color: white;
   text-align: center;
-  padding: -2rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: #b82626;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
 }
+
+/* Estilos para o link */
+.map-link {
+  color: white; /* Cor de texto suave */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Deixa o texto mais destacado */
+  transition: color 0.3s ease, transform 0.3s ease; /* Efeito suave para mudanças */
+}
+
+.map-link:hover {
+  color: black; /* Cor mais intensa quando o link é hover */
+  transform: scale(1.05); /* Dá um efeito de zoom leve */
+}
+
+.map-link:active {
+  transform: scale(0.98); /* Quando o link é clicado, dá uma leve contração */
+}
+
 
 h2 {
   font-size: 3rem;
@@ -134,7 +160,7 @@ h2 {
 }
 
 .enderecos-text {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'poppins', sans-serif;
 }
 
@@ -154,7 +180,7 @@ footer {
 /* Responsividade para telas pequenas (ex: smartphones) */
 @media (max-width: 768px) {
   .logo {
-    width: 60%;
+    width: 90%;
   }
 
   h1 {
@@ -170,6 +196,27 @@ footer {
   .button {
     font-size: 1.5rem;
     width: 100%;
+  }
+
+  .enderecos {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .enderecos-title {
+    font-size: 1.7rem;
+  }
+
+  .enderecos-text {
+    font-size: 0.9rem;
+  }
+
+  .enderecos-text2 {
+    font-size: 0.8rem;
+  }
+
+  footer{
+    font-size: 1.5rem;
   }
 }
 
@@ -190,6 +237,19 @@ footer {
 
   .enderecos {
     font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .enderecos-title {
+    font-size: 1.7rem;
+  }
+
+  .enderecos-text {
+    font-size: 0.8rem;
+  }
+
+  .enderecos-text2 {
+    font-size: 0.7rem;
   }
 
   .button {
@@ -200,5 +260,9 @@ footer {
   /* Garante que o vídeo ocupe 100% da altura da tela */
   .bg_video {
     height: 100vh; /* Garante que o vídeo ocupe toda a altura */
+  }
+
+  footer{
+    font-size: 1.5rem;
   }
 }

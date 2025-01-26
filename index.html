@@ -31,21 +31,21 @@
                     <img src="assets/telefone.png" alt="telefone" class="telefone">
                 </a>
             </div>
-            <h1>CUIDA EM PEDIR TEU CUMER</h1>
+            <h1>90'S BURGUER N' FRIES</h1>
             <div class="buttons">
-                <button class="button button-history">
+                <button class="button button-history" id="button-history" onclick="openHistory()">
                     NOSSA HISTÓRIA
                     <p class="sub-text">(EM BREVE)</p>
                 </button>
-                <button class="button button-site">
+                <button class="button button-site" onclick="openSite()">
                     NOSSO SITE
                     <p class="sub-text2">(DESCONTOS EXCLUSIVOS)</p>
                 </button>
-                <button class="button button-ifoos1">
+                <button class="button button-ifoos1" onclick="openIfoos1()">
                     IFOOD PARA RETIRADA EM NOSSA COZINHA
                     <p class="sub-text">E ENTREGAS EM TODA CIDADE!</p>
                 </button>
-                <button class="button button-ifoos2">
+                <button class="button button-ifoos2" onclick="openIfoos2()">
                     IFOOD PARA RETIRADA EM NOSSA LOJA
                     <p class="sub-text">E ENTREGAS NOS CONDOMÍNIOS APÓS A PRF!</p>
                 </button>
@@ -53,10 +53,14 @@
             <section>
                 <div class="enderecos">
                     <h2 class="enderecos-title">NOSSOS ENDEREÇOS</h2>
-                    <p class="enderecos-text">PONTO FÍSICO: RUA FREI CANECA, 320 - HELIOPÓLIS</p>
-                    <p class="enderecos-text2">APENAS RETIRADA: RUA DOM SEBATIÃO LEME, 385 - ALUISIO PINTO</p>
+                    <p class="enderecos-text">
+                        PONTO FÍSICO: <a class="map-link" href="https://www.google.com/maps?q=RUA%20FREI%20CANECA,%20320%20-%20HELIOPÓLIS,%20GARANHUNS" target="_blank">RUA FREI CANECA, 320 - HELIOPÓLIS</a>
+                    </p>
+                    <p class="enderecos-text2">
+                        RETIRADA: <a class="map-link" href="https://www.google.com/maps?q=RUA%20DOM%20SEBATIÃO%20LEME,%20385%20-%20ALUISIO%20PINTO,%20GARANHUNS" target="_blank">RUA DOM SEBATIÃO LEME, 385 - ALUISIO PINTO</a>
+                    </p>
                 </div>
-            </section>
+            </section>            
             <footer>
                 <div>
                     <p>&copy; 2021 - 2025 90'S BURGUER</p>
@@ -64,5 +68,6 @@
             </footer>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
