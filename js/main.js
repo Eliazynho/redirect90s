@@ -4,7 +4,7 @@ function openSite() {
 }
 
 function openHistory() {
-    window.open('https://90sburgers.com.br/', '_blank');
+    window.open('../pages/history.html', '_blank');
 }
 
 function openIfoos1() {
