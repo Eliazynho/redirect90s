@@ -24,7 +24,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 /* Vídeo de fundo */
@@ -38,160 +37,104 @@ body {
   z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
 
-/* Container de botões */
-.containerButtons {
-  width: 600px; /* Aumentei a largura para dar mais espaço aos botões */
-  height: 600px; /* Aumentei a altura para mais espaço entre os elementos */
-  font-family: 'Bangers', sans-serif;
+/* Conteúdo centralizado */
+.content {
+  text-align: center;
+  z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
+  width: 100%;
+  max-width: 700px; /* Limita a largura para não esticar demais */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  letter-spacing: 1px;
-  z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
-  text-align: center;
-  padding: 20px;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* Logo */
 .logo {
-  width: 25rem; /* Aumentei a largura da logo */
-	margin-bottom: -50px;
+  width: 40rem; /* Ajuste o tamanho da logo */
+  margin-bottom: 2rem; /* Espaço abaixo da logo */
 }
 
 /* Título */
 h1 {
-  font-size: 3rem; /* Aumentei o tamanho do título */
-  margin-bottom: 30px;
-  color: white;
-}
-
-/* Estilo dos botões */
-.buttons {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-}
-
-.button {
+  font-size: 4rem;
   font-family: 'Bangers', sans-serif;
+  color: #b82626;
   letter-spacing: 1px;
-  width: 100%; /* Botões ocupam toda a largura disponível */
-  max-width: 500px; /* Aumentei o max-width para permitir botões maiores */
-  height: 70px; /* Aumentei a altura dos botões */
-  font-size: 2rem; /* Aumentei o tamanho da fonte dos botões */
-  padding: 20px;
-  background-color: white;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  color: black;
-  transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
-}
-
-.button:hover {
-  background-color: #ff7e5f; /* Cor do fundo ao passar o mouse */
-  color: white; /* Muda a cor do texto ao passar o mouse */
-}
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo da página */
-body {
-  font-family: 'Bangers', sans-serif;
-  height: 100vh;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Remove a rolagem */
-}
-
-/* Container principal */
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* Vídeo de fundo */
-.bg_video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Faz o vídeo cobrir toda a tela sem distorcer */
-  z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-}
-
-/* Container de botões */
-.containerButtons {
-  width: 100%; /* Tornando a largura da div containerButtons proporcional à tela */
-  height: 80%; /* Tornando a altura proporcional à tela */
-  font-family: 'Bangers', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; /* Espaço igual entre os botões */
-  gap: 1rem;
-  letter-spacing: 1px;
-  z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
-  text-align: center;
-  padding: 20px;
-}
-
-/* Logo */
-.logo {
-  width: 40rem; /* Aumentei a largura da logo */
-  margin-bottom: 2rem; /* Aumentei o espaço abaixo da logo */
-}
-
-/* Título */
-h1 {
-  font-size: 3rem; /* Aumentei o tamanho do título */
-  margin-bottom: -3px;
-  color: white;
-}
-
-p{
-	font-size: 1rem;
+  text-shadow: 
+    2px 2px 0 white, 
+    -2px -2px 0 white, 
+    2px -2px 0  white, 
+    -2px 2px 0 white;
+  margin-bottom: -0.5rem;
 }
 
 /* Estilo dos botões */
 .buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%; /* Tornando a largura dos botões 100% */
   gap: 1rem;
+  width: 100%;
 }
 
 .button {
   font-family: 'Bangers', sans-serif;
   letter-spacing: 1px;
-  width: 100%; /* Botões ocupam toda a largura da div */
-  height: 20%; /* Cada botão ocupará 20% da altura da div containerButtons */
-  font-size: 2rem; /* Aumentei o tamanho da fonte dos botões */
+  width: 100%;
+  font-size: 2rem;
   padding: 20px;
   background-color: white;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
   color: black;
-  transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
-  background-color: #ff7e5f; /* Cor do fundo ao passar o mouse */
-  color: white; /* Muda a cor do texto ao passar o mouse */
+  background-color: #ff7e5f;
+  color: white;
+}
+
+/* Responsividade para telas pequenas (ex: smartphones) */
+@media (max-width: 768px) {
+  .logo {
+    width: 25rem; /* Reduz a largura da logo */
+  }
+
+  h1 {
+    font-size: 2rem; /* Diminui o tamanho do título */
+  }
+
+  .content {
+    width: 90%; /* Ajusta a largura da container de botões */
+    padding: 10px;
+    gap: 1.5rem;
+  }
+
+  .button {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte dos botões */
+  }
+}
+
+/* Responsividade para telas muito pequenas (ex: dispositivos móveis) */
+@media (max-width: 480px) {
+  .logo {
+    width: 20rem; /* Reduz ainda mais a largura da logo */
+  }
+
+  h1 {
+    font-size: 2.3rem; /* Tamanho menor para o título */
+  }
+
+  .content {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .button {
+    font-size: 1.2rem; /* Tamanho de fonte menor para botões */
+  }
 }
