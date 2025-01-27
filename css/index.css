@@ -8,19 +8,20 @@
 /* Corpo da página */
 body {
   font-family: 'Bangers', sans-serif;
-  min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+  min-height: 100vh;
   background-color: #222;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Previne rolagem, garantindo que o vídeo ocupe toda a tela */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Container principal */
 .container {
   position: relative;
   width: 100%;
-  height: 100vh; /* A altura deve ser 100% da tela */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,8 +34,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Garante que o vídeo ocupe toda a altura da tela */
-  object-fit: cover;  
+  height: 100%;
+  object-fit: cover;
   object-position: center;
   z-index: -1;
 }
@@ -43,38 +44,39 @@ body {
 .content {
   text-align: center;
   z-index: 1;
-  width: 80%;
-  max-width: 100%;
-  height: auto; /* Permite altura flexível dependendo do conteúdo */
-  padding: 20px;
+  width: 70%;
+  max-width: 1000px;
+  height: auto;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   box-sizing: border-box;
-  overflow: visible;
+  overflow: hidden;
 }
 
+/* Redes sociais */
 .social-media {
   display: flex;
   align-items: center;
   gap: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
-/* Logo */
+/* Logo - Alterado para 60% */
 .logo {
-  width: 40%; 
+  width: 60%;  /* Logo aumentada para 60% */
   max-width: 100%;
   transition: width 0.3s ease;
 }
 
 /* Título */
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-family: 'Bangers', sans-serif;
   color: #b82626;
   letter-spacing: 1px;
@@ -94,15 +96,15 @@ h1 {
   width: 100%;
   padding: 0;
   box-sizing: border-box;
-  margin-top: auto; /* Garante que os botões fiquem na parte inferior */
+  margin-top: auto;
 }
 
 .button {
   font-family: 'Bangers', sans-serif;
   letter-spacing: 1px;
   width: 80%;
-  font-size: 2rem;
-  padding: 20px;
+  font-size: 1.5rem;
+  padding: 18px;
   background-color: white;
   border: none;
   border-radius: 1rem;
@@ -119,115 +121,95 @@ h1 {
 
 /* Estilo de endereços */
 .enderecos {
-  font-family: 'poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: white;
   text-align: center;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #b82626;
   border-radius: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-
 }
 
 /* Estilos para o link */
 .map-link {
-  color: white; /* Cor de texto suave */
-  text-decoration: none; /* Remove o sublinhado */
-  font-weight: bold; /* Deixa o texto mais destacado */
-  transition: color 0.3s ease, transform 0.3s ease; /* Efeito suave para mudanças */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .map-link:hover {
-  color: black; /* Cor mais intensa quando o link é hover */
-  transform: scale(1.05); /* Dá um efeito de zoom leve */
+  color: black;
+  transform: scale(1.05);
 }
 
 .map-link:active {
-  transform: scale(0.98); /* Quando o link é clicado, dá uma leve contração */
-}
-
-
-h2 {
-  font-size: 3rem;
-  font-family: 'Bangers', sans-serif;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-}
-
-.enderecos-text {
-  font-size: 1.2rem;
-  font-family: 'poppins', sans-serif;
-}
-
-.enderecos-text2 {
-  font-size: 1.02rem;
-  font-family: 'poppins', sans-serif;
+  transform: scale(0.98);
 }
 
 footer {
-  font-family: 'bangers', sans-serif;
-  font-size: 2rem;
+  font-family: 'Bangers', sans-serif;
+  font-size: 1.5rem;
   color: white;
   text-align: center;
   margin-top: -1rem;
 }
 
-/* Responsividade para telas pequenas (ex: smartphones) */
+/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
+  .logo {
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    width: 85%;
+    padding: 10px;
+    gap: 1.5rem;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .enderecos {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .enderecos-title {
+    font-size: 1.5rem;
+  }
+
+  .enderecos-text {
+    font-size: 0.8rem;
+  }
+
+  .enderecos-text2 {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
   .logo {
     width: 90%;
   }
 
   h1 {
     font-size: 2rem;
-  }
-
-  .content {
-    width: 90%;
-    padding: 10px;
-    gap: 1.5rem;
-  }
-
-  .button {
-    font-size: 1.5rem;
-    width: 100%;
-  }
-
-  .enderecos {
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
-  .enderecos-title {
-    font-size: 1.7rem;
-  }
-
-  .enderecos-text {
-    font-size: 0.9rem;
-  }
-
-  .enderecos-text2 {
-    font-size: 0.8rem;
-  }
-
-  footer{
-    font-size: 1.5rem;
-  }
-}
-
-/* Responsividade para telas muito pequenas (ex: dispositivos móveis) */
-@media (max-width: 480px) {
-  .logo {
-    width: 95%;
-  }
-
-  h1 {
-    font-size: 2.3rem;
   }
 
   .content {
@@ -241,15 +223,15 @@ footer {
   }
 
   .enderecos-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .enderecos-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .enderecos-text2 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .button {
@@ -257,12 +239,7 @@ footer {
     width: 100%;
   }
 
-  /* Garante que o vídeo ocupe 100% da altura da tela */
-  .bg_video {
-    height: 100vh; /* Garante que o vídeo ocupe toda a altura */
-  }
-
-  footer{
-    font-size: 1.5rem;
+  footer {
+    font-size: 1.3rem;
   }
 }
