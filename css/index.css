@@ -57,6 +57,18 @@ body {
   overflow: hidden;
 }
 
+.line-red {
+  width: 100%;
+  height: 30px;
+  background-color: #b82626;
+}
+
+.line-yellow {
+  width: 100%;
+  height: 30px;
+  background-color: #efdf5a;
+}
+
 /* Redes sociais */
 .social-media {
   display: flex;
