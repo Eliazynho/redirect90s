@@ -101,7 +101,7 @@ h1 {
 }
 /* Estilo do Modal */
 .modal {
-  display: none;
+  display: none; /* Inicialmente o modal está escondido */
   position: fixed;
   z-index: 1;
   left: 0;
@@ -111,15 +111,17 @@ h1 {
   background-color: rgba(0, 0, 0, 0.6);
   animation: fadeIn 0.5s ease-out;
   display: flex;
-  justify-content: center;
-  align-items: center; /* Centraliza o conteúdo do modal */
+  justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
 }
 
+/* Estilo do conteúdo do Modal */
 .modal-content {
   background: linear-gradient(45deg, #b82626, #efdf5a);
   border-radius: 10px;
   padding: 40px;
-  width: 80%; /* Define uma largura fixa para o modal */
+  width: 80%; /* Largura do modal */
+  max-width: 600px; /* Limita a largura máxima */
   text-align: center;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
   color: white;
@@ -131,9 +133,10 @@ h1 {
   flex-direction: column; /* Coloca os botões um em cima do outro */
   align-items: center; /* Centraliza os botões */
   justify-content: center;
-  position: relative; /* Necessário para o posicionamento do botão */
+  position: relative;
 }
 
+/* Estilo do botão de fechar */
 .close {
   color: white;
   font-size: 30px;
@@ -166,19 +169,19 @@ h1 {
 }
 
 .whatsapp-button {
-  display: flex; /* Flexbox para centralizar conteúdo */
+  display: flex;
   align-items: center; /* Alinha o conteúdo verticalmente */
   justify-content: flex-start; /* Alinha os itens à esquerda */
   background-color: white; /* Cor de fundo branco */
   color: #b82626; /* Cor do texto vermelha */
   font-size: 16px;
   padding: 10px 20px;
-  margin: 10px 0; /* Espaçamento vertical entre os botões */
-  border-radius: 999px;
+  margin: 10px 0;
+  border-radius: 999px; /* Bordas 100% arredondadas */
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   width: 100%;
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: left;
   border: 2px solid #b82626; /* Borda vermelha */
 }
 
@@ -188,7 +191,7 @@ h1 {
 }
 
 .whatsapp-icon {
-  width: 24px; /* Ajuste no tamanho da logo */
+  width: 24px; /* Tamanho da logo */
   height: 24px;
   margin-right: 10px; /* Espaço entre o ícone e o texto */
 }
@@ -211,6 +214,7 @@ h1 {
       transform: translateY(0);
   }
 }
+
 
 
 /* Estilo dos botões */

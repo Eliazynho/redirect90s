@@ -20,37 +20,43 @@ const modal = document.getElementById('modal');
 const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn');
 
+// Inicialmente, garante que o modal está escondido
+modal.style.display = "none"; // Esconde o modal ao carregar a página
+
+// Abre o modal quando clicar no botão
 openModalBtn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "flex"; // Exibe o modal
 }
 
+// Fecha o modal quando clicar no botão de fechar
 closeModalBtn.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = "none"; // Esconde o modal
 }
 
 // Fecha o modal se clicar fora dele
 window.onclick = function(event) {
   if (event.target === modal) {
-    modal.style.display = "none";
+    modal.style.display = "none"; // Esconde o modal
   }
 }
 
+// Função para trocar a logo do WhatsApp ao passar o mouse
 const whatsappButtons = document.querySelectorAll('.whatsapp-button');
 
-  whatsappButtons.forEach(button => {
-    const icon = button.querySelector('.whatsapp-icon'); // Seleciona o ícone dentro do botão
+whatsappButtons.forEach(button => {
+  const icon = button.querySelector('.whatsapp-icon'); // Seleciona o ícone dentro do botão
 
-    // Define a imagem normal e a imagem para o efeito hover
-    const normalIcon = 'assets/whatsapp.png'; // Caminho para a logo normal
-    const hoverIcon = 'assets/whatsapp white.png'; // Caminho para a logo no hover (substitua com o caminho correto)
+  // Caminho para a logo normal e para o efeito hover
+  const normalIcon = 'assets/whatsapp.png'; // Caminho para a logo normal
+  const hoverIcon = 'assets/whatsapp-white.png'; // Caminho para a logo no hover
 
-    // Troca a logo para o hover quando o mouse entra no botão
-    button.addEventListener('mouseenter', () => {
-      icon.src = hoverIcon;
-    });
-
-    // Restaura a logo normal quando o mouse sai do botão
-    button.addEventListener('mouseleave', () => {
-      icon.src = normalIcon;
-    });
+  // Troca a logo para o hover quando o mouse entra no botão
+  button.addEventListener('mouseenter', () => {
+    icon.src = hoverIcon;
   });
+
+  // Restaura a logo normal quando o mouse sai do botão
+  button.addEventListener('mouseleave', () => {
+    icon.src = normalIcon;
+  });
+});
