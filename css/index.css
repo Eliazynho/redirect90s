@@ -127,7 +127,7 @@ h1 {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12px;
   animation: slideIn 1s ease-out;
   display: flex;
   flex-direction: column; /* Coloca os botões um em cima do outro */
