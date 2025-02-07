@@ -48,7 +48,7 @@ whatsappButtons.forEach(button => {
 
   // Caminho para a logo normal e para o efeito hover
   const normalIcon = 'assets/whatsapp.png'; // Caminho para a logo normal
-  const hoverIcon = 'assets/whatsapp-white.png'; // Caminho para a logo no hover
+  const hoverIcon = 'assets/whatsapp white.png'; // Caminho para a logo no hover
 
   // Troca a logo para o hover quando o mouse entra no botão
   button.addEventListener('mouseenter', () => {
