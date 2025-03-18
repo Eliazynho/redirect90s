@@ -345,7 +345,8 @@ footer {
 /* Para telas pequenas (tablets e dispositivos intermediários) */
 @media (max-width: 768px) {
   .logo {
-    width: 70%;
+    margin-top: 30px;
+    width: 50%;
     margin-bottom: 3%;
   }
 
@@ -376,6 +377,7 @@ footer {
 /* Para telas muito pequenas (smartphones) */
 @media (max-width: 480px) {
   .logo {
+    margin-top: 30px;
     width: 85%;
     margin-bottom: 3%;
   }
