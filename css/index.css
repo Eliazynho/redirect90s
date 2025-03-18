@@ -150,6 +150,21 @@ h1 {
   align-items: center;
 }
 
+.modal-sites{
+  display: none; /* Inicialmente o modal está escondido */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.5s ease-out;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+}
+
 /* Estilo do conteúdo do Modal */
 .modal-content {
   background: linear-gradient(to bottom, #ffffff, #d4d0c8); /* Gradiente sutil XP */
@@ -254,6 +269,12 @@ h1 {
 }
 
 .whatsapp-icon {
+  width: 24px; /* Tamanho da logo */
+  height: 24px;
+  margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+.icon {
   width: 24px; /* Tamanho da logo */
   height: 24px;
   margin-right: 10px; /* Espaço entre ícone e texto */
@@ -410,6 +431,7 @@ footer {
 
   .content {
     width: 100%;
+    padding: 20px;
     gap: 1rem;
   }
 

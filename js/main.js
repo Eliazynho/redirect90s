@@ -20,10 +20,25 @@ const modal = document.getElementById('modal');
 const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const modalJoguin = document.getElementById('modal-joguin');
+const openModalBtnJg = document.getElementById('openModalBtnJg');
+const closeModalBtnJg = document.getElementById('closeModalBtnJg');
+const modalSite = document.getElementById('modal-sites');
+const openModalBtnSite = document.getElementById('openModalBtnSite');
+const closeModalBtnSite = document.getElementById('closeModalBtnSite');
 
 // Inicialmente, garante que o modal está escondido
 modal.style.display = "none"; // Esconde o modal ao carregar a página
 modalJoguin.style.display = "none";
+modalSite.style.display = "none";
+
+// Função para abrir o modal
+openModalBtnSite.onclick = function() {
+  modalSite.style.display = "flex"; // Exibe o modal
+}
+
+closeModalBtnSite.onclick = function() {
+  modalSite.style.display = "none"; // Esconde o modal
+}
 
 // Abre o modal quando clicar no botão
 openModalBtn.onclick = function() {
