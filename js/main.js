@@ -19,14 +19,25 @@ function openIfoos2() {
 const modal = document.getElementById('modal');
 const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn');
+const modalJoguin = document.getElementById('modal-joguin');
 
 // Inicialmente, garante que o modal está escondido
 modal.style.display = "none"; // Esconde o modal ao carregar a página
+modalJoguin.style.display = "none";
 
 // Abre o modal quando clicar no botão
 openModalBtn.onclick = function() {
   modal.style.display = "flex"; // Exibe o modal
 }
+
+openModalBtnJg.onclick = function() {
+  modalJoguin.style.display = "flex"; // Exibe o modal
+}
+
+closeModalBtnJg.onclick = function() {
+  modalJoguin.style.display = "none"; // Esconde o modal
+}
+
 
 // Fecha o modal quando clicar no botão de fechar
 closeModalBtn.onclick = function() {
