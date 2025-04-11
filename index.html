@@ -1,142 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>90s Burgers</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <meta name="description" content="90s Burgers: A loja de hambúrgueres que mistura sabor irresistível com a nostalgia dos anos 90/2000. Siga-nos no Instagram @90sburgers e fique por dentro de todas as novidades! Entregas rápidas e seguras, com entregas na portaria de prédios, conforme a recomendação do iFood.">
+    <meta name="description"
+        content="90s Burgers: A loja de hambúrgueres que mistura sabor irresistível com a nostalgia dos anos 90/2000. Siga-nos no Instagram @90sburgers e fique por dentro de todas as novidades! Entregas rápidas e seguras, com entregas na portaria de prédios, conforme a recomendação do iFood.">
     <link rel="stylesheet" href="css/index.css?v=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
-        <!-- Vídeo de fundo
-        <video class="bg_video" autoplay loop muted>
-            <source src="assets/background_lindo.mp4" type="video/mp4">
-        </video>-->
-        <div class="logo">
-            <a href="#"><img src="assets/LOGO-90S.png" alt="" class="logo-img"></a>
-        </div>
+        <!-- Logo -->
+        <header>
+            <a href="#" class="logo">
+                <img src="assets/logo1.png" alt="90s Burgers" class="logo-img">
+            </a>
+        </header>
 
-        <div class="content">
+        <!-- Seção Principal -->
+        <main>
             <div class="social-media">
-                <a href="https://www.instagram.com/90sburgers/" class="button" style="padding: 15px;">
-                    <img src="assets/instagram.png" alt="instagram" class="instagram">
+                <a href="https://www.instagram.com/90sburgers/" class="social-icon">
+                    <img src="assets/instagram (1).png" alt="Instagram">
                 </a>
-                <p style="margin-bottom: 9px;">|</p>
-                <a id="openModalBtn" class="button" style="padding: 15px;">
-                    <img src="assets/whatsapp.png" alt="whatsapp" class="whatsapp">
-                </a>
-                <p style="margin-bottom: 9px;">|</p>
-                <a class="button" style="padding: 15px;" id="openModalBtnJg">
-                    <img src="assets/controlin.png" alt="telefone" class="telefone">
+                <a href="https://wa.me/5587988292585" class="social-icon">
+                    <img src="assets/whatsapp (1).png" alt="WhatsApp">
                 </a>
             </div>
+
+
             <div class="buttons">
-                <button class="button button-site" id="openModalBtnSite">
-                    <h3 style="font-size: 24px;">
-                        PEÇA SEU 90S</h3>
-                    <p class="sub-text2"  style="font-size: px;">(DESCONTOS EXCLUSIVOS)</p>
+                <button class="btn primary" id="openModalBtnSite">
+                    <h3>PEÇA SEU 90S</h3>
+                    <p>(DESCONTOS EXCLUSIVOS)</p>
                 </button>
-                <button class="button button-ifoos1" onclick="openIfoos1()">
-                    <h3 style="font-size: 22px;">IFOOD ALUÍSIO PINTO</h3>
-                    <p class="sub-text2"  style="font-size: 13px;">PARA RETIRADA E ENTREGAS</p>
+                <button class="btn secondary" onclick="openIfoos1()">
+                    <h3>IFOOD ALUÍSIO PINTO</h3>
+                    <p>PARA RETIRADA E ENTREGAS</p>
                 </button>
-                <button class="button button-ifoos2" onclick="openIfoos2()">
-                    <h3 style="font-size: 24px;">IFOOD HELIOPÓLIS</h3>
-                    <p class="sub-text" style="font-size: 10px;">PARA RETIRADA E ENTREGAS NA REGIÃO DO HELIOPÓLIS</p>
+                <button class="btn secondary" onclick="openIfoos2()">
+                    <h3>IFOOD HELIOPÓLIS</h3>
+                    <p>PARA RETIRADA E ENTREGAS NA REGIÃO DO HELIOPÓLIS</p>
                 </button>
             </div>
 
             <!-- Endereços -->
-            <section>
-                <div class="enderecos">
-                    <h2 class="enderecos-title">NOSSOS ENDEREÇOS</h2>
-                    <p class="enderecos-text">
-                        PONTO FÍSICO: <a class="map-link" href="https://www.google.com/maps?q=RUA%20FREI%20CANECA,%20320%20-%20HELIOPÓLIS,%20GARANHUNS" target="_blank">RUA FREI CANECA, 320 - HELIOPÓLIS</a>
-                    </p>
-                    <p class="enderecos-text2">
-                        RETIRADA: <a class="map-link" href="https://www.google.com/maps?q=RUA%20DOM%20SEBATIÃO%20LEME,%20385%20-%20ALUISIO%20PINTO,%20GARANHUNS" target="_blank">RUA DOM SEBATIÃO LEME, 385 - ALUISIO PINTO</a>
-                    </p>
-                </div>
-            </section>            
+            <section class="addresses">
+                <h2>NOSSOS ENDEREÇOS</h2>
+                <p>PONTO FÍSICO: <a
+                        href="https://www.google.com/maps?q=RUA%20FREI%20CANECA,%20320%20-%20HELIOPÓLIS,%20GARANHUNS"
+                        target="_blank">RUA FREI CANECA, 320 - HELIOPÓLIS</a></p>
+                <p>RETIRADA: <a
+                        href="https://www.google.com/maps?q=RUA%20DOM%20SEBATIÃO%20LEME,%20385%20-%20ALUISIO%20PINTO,%20GARANHUNS"
+                        target="_blank">RUA DOM SEBATIÃO LEME, 385 - ALUISIO PINTO</a></p>
+            </section>
+        </main>
 
-            <!-- Rodapé -->
-            <footer>
-                <div>
-                    <p>&copy; 2021 - 2025 90'S BURGUERS</p>
-                </div>
-            </footer>
-        </div>
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2021 - 2025 90'S BURGUERS</p>
+        </footer>
     </div>
-<!-- Modal -->
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeModalBtn">&times;</span>
-        <h1>NOSSOS CONTATOS</h1>
-        <div class="whatsapp-buttons">
-            <a href="https://wa.me/5587988292585" class="whatsapp-button" target="_blank">
-                <img src="assets/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
-                <div class="whatsapp-text">                
-                    <p class="title-whatsapp">WHATSAPP DELIVERY</p>
-                    <p class="subtitle-whatsapp">ALUÍSIO PINTO</p>
-                </div>
-            </a>
-            <a href="https://wa.me/5587988520705" class="whatsapp-button" target="_blank">
-                <img src="assets/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
-                <div class="whatsapp-text">                
-                    <p class="title-whatsapp">WHATSAPP LOJA</p>
-                    <p class="subtitle-whatsapp">FREI CANECA</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
 
-<div id="modal-joguin" class="modal-joguin">
-    <div class="modal-content">
-        <span class="close" id="closeModalBtnJg">&times;</span>
-        <h1>JOGA AÍ</h1>
-        <div class="whatsapp-buttons">
-            <a href="https://playsnake.org" class="whatsapp-button" target="_blank">
-                <img src="assets/snake.webp" alt="snake" class="icon">
-                <div class="whatsapp-text">                
-                    <p class="title-whatsapp">JOGO DA COBRINHA</p>
-                </div>
-            </a>
-            <a href="https://www.goodoldtetris.com" class="whatsapp-button" target="_blank">
-                <img src="assets/tetris.png" alt="snake" class="icon">
-                <div class="whatsapp-text">                
-                    <p class="title-whatsapp">JOGO DO TETRIS</p>
-                </div>
-            </a>
+    <!-- Modais -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h1>NOSSOS CONTATOS</h1>
+            <div class="modal-buttons">
+                <a href="https://wa.me/5587988292585" target="_blank" class="modal-button">WhatsApp Delivery Aluísio
+                    Pinto</a>
+                <a href="https://wa.me/5587988520705" target="_blank" class="modal-button">WhatsApp Loja Frei Caneca</a>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="modal-sites" class="modal-sites">
-    <div class="modal-content">
-        <span class="close" id="closeModalBtnSite">&times;</span>
-        <h1>ESCOLHA O MAIS PERTO</h1>
-        <div class="whatsapp-buttons">
-            <a href="https://90sburgers.menudino.com/" class="whatsapp-button" target="_blank">
-                <img src="assets/hamburguer.png" alt="snake" class="icon">
-                <div class="whatsapp-text">                
-                    <p class="title-whatsapp">DELIVERY PARA TODA CIDADE</p>
-                </div>
-            </a>
-            <a href="https://90sheliopolis.menudino.com/" class="whatsapp-button" target="_blank">
-                <img src="assets/hamburguer.png" alt="snake" class="icon">
-                <div class="whatsapp-text">                
-                    <p class="title-whatsapp">RETIRADA E CONSUMIR</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
     <script src="js/main.js?v=1"></script>
 </body>
+
 </html>
