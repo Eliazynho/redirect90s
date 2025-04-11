@@ -97,6 +97,7 @@ header {
 
 .btn.primary {
   background-color: #b92526;
+  color: #f0df5a;
 }
 
 .btn.secondary {
@@ -130,11 +131,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: linear-gradient(
-    to bottom,
-    #ffffff,
-    #eaeaea
-  ); /* Gradiente suave de fundo */
+  background: #ffffff; /* Gradiente suave de fundo */
   color: #b92526;
   font-size: 16px; /* Aumentando o tamanho da fonte */
   padding: 10px; /* Ajustando o padding para botões maiores */
@@ -145,6 +142,7 @@ header {
   width: 100%;
   text-align: left;
   border: 2px solid #b92526;
+  border-radius: 20px;
   box-shadow: inset -1px -1px 0px #ffffff, inset 1px 1px 0px #404040;
 }
 
@@ -332,7 +330,7 @@ footer {
 
 /* Conteúdo do Modal */
 .modal-content {
-  background: linear-gradient(to bottom, #ffffff, #d4d0c8);
+  background: #ffffff;
   border: 2px solid #808080;
   border-radius: 2px;
   padding: 40px;
@@ -371,7 +369,7 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
   .logo-img {
-    width: 150px;
+    width: 300px;
     margin-bottom: -20px;
   }
 
